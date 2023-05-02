@@ -1,0 +1,87 @@
+body {
+	font-family: sans-serif;
+	background-color: #f4f4f4;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 36px;
+	color: #333;
+}
+
+form {
+	max-width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	animation: form-appear 0.5s ease-out forwards;
+}
+
+@keyframes form-appear {
+	from {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+form input {
+	margin-bottom: 10px;
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+form button {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-out;
+}
+
+form button:hover {
+	background-color: #3e8e41;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	animation: list-appear 0.5s ease-out forwards;
+}
+
+@keyframes list-appear {
+	from {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+li {
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
